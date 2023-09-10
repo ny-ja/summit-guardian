@@ -4,9 +4,9 @@
       class="px-4 py-6 mx-auto lg:py-8 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8"
     >
       <div
-        class="relative animate-bounce flex items-center justify-center"
+        class="relative flex items-center justify-center"
       >
-        <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="100" height="100" />
+        <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="150" height="150" />
       </div>
     </div>
   </div>
@@ -57,31 +57,31 @@
       </div>
       <div class="relative grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
         <div
-          class="border-2 text-center px-28 py-40 transition duration-300 transform bg-heart-rate bg-cover rounded-l-2xl hover:scale-105 md:shadow-xl hover:shadow-stone-500"
+          class="border-2 text-center px-28 py-40 transition duration-300 transform bg-heart-rate bg-cover rounded-lg hover:scale-105 md:shadow-xl hover:shadow-stone-500"
         >
-          <div class="m-2 absolute border-2 rounded-tl-md inset-x-0 bottom-0">
-            <p class="tracking-tight text-white font-mono text-xl font-bold antialiased">HEART RATE: {{ databaseData['Sensor/heart_rate'] || 'No data available' }}</p>
+          <div class="m-2 absolute inset-x-0 bottom-0">
+            <p class="text-white font-black overline font-serif text-md antialiased">HEART RATE: {{ databaseData['Sensor/heart_rate'] || 'No data available' }}</p>
           </div>
         </div>
         <div
-          class="border-2 text-center px-28 py-40 transition duration-300 transform bg-blood-oxygen bg-cover rounded-t-2xl hover:scale-105 md:shadow-xl hover:shadow-stone-500"
+          class="border-2 text-center px-28 py-40 transition duration-300 transform bg-blood-oxygen bg-cover rounded-lg hover:scale-105 md:shadow-xl hover:shadow-stone-500"
         >
-          <div class="m-2 absolute border-2 rounded-tr-md inset-x-0 bottom-0">
-            <p class="tracking-tight text-white font-mono text-xl font-bold antialiased">BLOOD OXYGEN: {{ databaseData['Sensor/heart_rate'] || 'No data available' }}</p>
+          <div class="m-2 absolute inset-x-0 bottom-0">
+            <p class="text-white font-black overline font-serif text-md antialiased">BLOOD OXYGEN: {{ databaseData['Sensor/heart_rate'] || 'No data available' }}</p>
           </div>
         </div>
         <div
-          class="border-2 text-center px-28 py-40 transition duration-300 transform bg-body-temperature bg-cover rounded-b-2xl hover:scale-105 md:shadow-xl hover:shadow-stone-500"
+          class="border-2 text-center px-28 py-40 transition duration-300 transform bg-body-temperature bg-cover rounded-lg hover:scale-105 md:shadow-xl hover:shadow-stone-500"
         >
-          <div class="m-2 absolute border-2 rounded-br-md inset-x-0 bottom-0">
-            <p class="tracking-tight text-white font-mono text-xl font-bold antialiased">BODY TEM: {{ databaseData['Sensor/heart_rate'] || 'No data available' }}</p>
+          <div class="m-2 absolute inset-x-0 bottom-0">
+            <p class="text-white font-black overline font-serif text-md antialiased">BODY TEM: {{ databaseData['Sensor/heart_rate'] || 'No data available' }}</p>
           </div>
         </div>
         <div
-          class="border-2 text-center px-28 py-40 transition duration-300 transform bg-heart-rate bg-cover rounded-r-2xl hover:scale-105 md:shadow-xl hover:shadow-stone-500"
+          class="border-2 text-center px-28 py-40 transition duration-300 transform bg-heart-rate bg-cover rounded-lg hover:scale-105 md:shadow-xl hover:shadow-stone-500"
         >
-          <div class="m-2 absolute border-2 rounded-bl-md inset-x-0 bottom-0">
-            <p class="tracking-tight text-white font-mono text-xl font-bold antialiased">HEART RATE: {{ databaseData['Sensor/heart_rate'] || 'No data available' }}</p>
+          <div class="m-2 absolute inset-x-0 bottom-0">
+            <p class="text-white font-black overline font-serif text-md antialiased">HEART RATE: {{ databaseData['Sensor/heart_rate'] || 'No data available' }}</p>
           </div>
         </div>
       </div>
