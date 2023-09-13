@@ -21,7 +21,7 @@ import { RouterLink, RouterView } from "vue-router";
             >
 
             <RouterLink
-              to="/about"
+              to="/team"
               class="text-teal-100 text-md font-sans subpixel-antialiased shadow-lg shadow-cyan-500/50 border-y rounded-md px-2 border-sky-100 hover:bg-cyan-400 hover:-translate-y-1"
               >TEAM</RouterLink
             >
