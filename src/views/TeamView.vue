@@ -22,13 +22,13 @@
             <div class="relative pb-56 mb-4 rounded shadow lg:pb-64">
               <img
                 class="absolute object-cover w-full h-full rounded"
-                src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
+                src="@/assets/team_images/nyja.jpg"
                 alt="Person"
               />
             </div>
             <div class="flex flex-col sm:text-center">
-              <p class="text-lg text-cyan-400 font-bold">Oliver Aguilerra</p>
-              <p class="mb-5 text-xs text-gray-300">Product Manager</p>
+              <p class="text-lg text-cyan-400 font-bold">Johnny Ermio</p>
+              <p class="mb-5 text-xs text-gray-300">Programmer</p>
               <div class="flex items-center space-x-3 sm:justify-center">
                 <a
                   href="/"
@@ -57,13 +57,13 @@
             <div class="relative pb-56 mb-4 rounded shadow lg:pb-64">
               <img
                 class="absolute object-cover w-full h-full rounded"
-                src="https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                src=""
                 alt="Person"
               />
             </div>
             <div class="flex flex-col sm:text-center">
-              <p class="text-lg text-cyan-400 font-bold">Marta Clermont</p>
-              <p class="mb-5 text-xs text-gray-300">Design Team Lead</p>
+              <p class="text-lg text-cyan-400 font-bold">Kate Labadan</p>
+              <p class="mb-5 text-xs text-gray-300">Member</p>
               <div class="flex items-center space-x-3 sm:justify-center">
                 <a
                   href="/"
@@ -92,13 +92,13 @@
             <div class="relative pb-56 mb-4 rounded shadow lg:pb-64">
               <img
                 class="absolute object-cover w-full h-full rounded"
-                src="https://images.pexels.com/photos/3747435/pexels-photo-3747435.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                src=""
                 alt="Person"
               />
             </div>
             <div class="flex flex-col sm:text-center">
-              <p class="text-lg text-cyan-400 font-bold">Alice Melbourne</p>
-              <p class="mb-5 text-xs text-gray-300">Human Resources</p>
+              <p class="text-lg text-cyan-400 font-bold">Jayson Mansili</p>
+              <p class="mb-5 text-xs text-gray-300">Member</p>
               <div class="flex items-center space-x-3 sm:justify-center">
                 <a
                   href="/"
@@ -127,13 +127,13 @@
             <div class="relative pb-56 mb-4 rounded shadow lg:pb-64">
               <img
                 class="absolute object-cover w-full h-full rounded"
-                src="https://images.pexels.com/photos/3931603/pexels-photo-3931603.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                src=""
                 alt="Person"
               />
             </div>
             <div class="flex flex-col sm:text-center">
-              <p class="text-lg text-cyan-400 font-bold">John Doe</p>
-              <p class="mb-5 text-xs text-gray-300">Good guy</p>
+              <p class="text-lg text-cyan-400 font-bold">Kent Lauvin Alcosaba</p>
+              <p class="mb-5 text-xs text-gray-300">Member</p>
               <div class="flex items-center space-x-3 sm:justify-center">
                 <a
                   href="/"
