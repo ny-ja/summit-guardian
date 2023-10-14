@@ -29,7 +29,8 @@ import { RouterLink, RouterView } from "vue-router";
 
           <div class="">
             <div class="mt-10">
-              <p class="text-cyan-400 font-sans text-4xl font-bold md:text-5xl">
+              <p class="text-cyan-400 font-sans text-4xl font-bold md:text-5xl"
+              style="text-shadow: 2px 2px #000000;">
                 SUMMIT GUARDIAN
               </p>
             </div>

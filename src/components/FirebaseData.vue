@@ -6,7 +6,7 @@ const databaseData = ref({});
 
 onMounted(async () => {
   try {
-    const paths = ["Sensor/heart_rate"];
+    const paths = ["Sensor/heart_rate", "Sensor/blood_oxygen", "Sensor/body_temperature"];
 
     for (const path of paths) {
       const data = await getDataFromDatabase(path);
@@ -35,6 +35,7 @@ onMounted(async () => {
           <div class="absolute inset-x-0 bottom-0">
             <p
               class="mx-4 my-2 text-white font-black font-sans text-xl tracking-tighter subpixel-antialiased shadow-2xl shadow-cyan-500/50 border-y rounded-md border-sky-100"
+              style="text-shadow: 2px 2px #242222;"
             >
               HEART RATE:
               {{ databaseData["Sensor/heart_rate"] || "No data available" }}
@@ -47,9 +48,10 @@ onMounted(async () => {
           <div class="absolute inset-x-0 bottom-0">
             <p
               class="mx-4 my-2 text-white font-black font-sans text-xl tracking-tighter subpixel-antialiased shadow-2xl shadow-cyan-500/50 border-y rounded-md border-sky-100"
+              style="text-shadow: 2px 2px #242222;"
             >
               BLOOD OXYGEN:
-              {{ databaseData["Sensor/heart_rate"] || "No data available" }}
+              {{ databaseData["Sensor/blood_oxygen"] || "No data available" }}
             </p>
           </div>
         </div>
@@ -59,9 +61,10 @@ onMounted(async () => {
           <div class="absolute inset-x-0 bottom-0">
             <p
               class="mx-4 my-2 text-white font-black font-sans text-xl tracking-tighter subpixel-antialiased shadow-2xl shadow-cyan-500/50 border-y rounded-md border-sky-100"
+              style="text-shadow: 2px 2px #242222;"
             >
-              BODY TEM:
-              {{ databaseData["Sensor/heart_rate"] || "No data available" }}
+              BODY TEMP:
+              {{ databaseData["Sensor/body_temperature"] || "No data available" }}
             </p>
           </div>
         </div>
@@ -71,9 +74,10 @@ onMounted(async () => {
           <div class="absolute inset-x-0 bottom-0">
             <p
               class="mx-4 my-2 text-white font-black font-sans text-xl tracking-tighter subpixel-antialiased shadow-2xl shadow-cyan-500/50 border-y rounded-md border-sky-100"
+              style="text-shadow: 2px 2px #242222;"
             >
               HEART RATE:
-              {{ databaseData["Sensor/heart_rate"] || "No data available" }}
+              {{ "No data available" }}
             </p>
           </div>
         </div>
