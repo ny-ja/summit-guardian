@@ -3,7 +3,7 @@ import { ref, onMounted } from "vue";
 import { getDataFromDatabase, onDatabaseDataChange } from "../firebase";
 
 const databaseData = ref({});
-const isHeartRateLow = ref(false);
+const isHeartRateLowOrHigh = ref(false);
 
 onMounted(async () => {
   try {
@@ -21,9 +21,9 @@ onMounted(async () => {
       onDatabaseDataChange(path, (newData) => {
         databaseData.value[path] = newData || "No data available";
 
-        // Check if heart rate is below 60
+        // Check if heart rate is below 60 or above 100
         if (path === "Sensor/heart_rate") {
-          isHeartRateLow.value = newData < 60;
+          isHeartRateLowOrHigh.value = newData < 60 || newData > 100;
         }
       });
     }
@@ -39,7 +39,7 @@ onMounted(async () => {
       <div class="relative grid gap-6 sm:grid-row-2 md:grid-cols-2">
         <div>
           <div
-            v-if="isHeartRateLow"
+            v-if="isHeartRateLowOrHigh"
             class="border-y border-red-500 text-center px-24 py-40 transition duration-300 transform bg-heart-rate bg-cover rounded-lg shadow-inner shadow-red-500 hover:scale-105"
           >
             <div class="absolute inset-x-0 bottom-0">
