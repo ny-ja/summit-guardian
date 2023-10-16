@@ -42,7 +42,7 @@ import { RouterLink, RouterView } from "vue-router";
             </div>
           </div>
 
-          <div class="flex mt-10">
+          <div class="flex mt-10 mb-10">
             <RouterLink
               to="/map"
               class="flex text-teal-100 text-xl font-sans subpixel-antialiased shadow-lg shadow-cyan-500/50 border-y rounded-md px-2 border-sky-100 bg-cyan-700 hover:bg-cyan-400 hover:-translate-y-1"
