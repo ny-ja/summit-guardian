@@ -1,5 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
+import DistressSignal from "./components/DistressSignal.vue";
 </script>
 
 <template>
@@ -7,6 +8,8 @@ import { RouterLink, RouterView } from "vue-router";
     <div
       class="relative px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
     >
+      <DistressSignal />
+
       <div class="relative grid lg:grid-cols-2 gap-4">
         <div class="lg:mt-20">
           <div class="">
@@ -29,8 +32,10 @@ import { RouterLink, RouterView } from "vue-router";
 
           <div class="">
             <div class="mt-10">
-              <p class="text-cyan-400 font-sans text-4xl font-bold md:text-5xl"
-              style="text-shadow: 2px 2px #000000;">
+              <p
+                class="text-cyan-400 font-sans text-4xl font-bold md:text-5xl"
+                style="text-shadow: 2px 2px #000000"
+              >
                 SUMMIT GUARDIAN
               </p>
             </div>
