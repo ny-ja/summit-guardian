@@ -3,10 +3,12 @@ import { ref, onMounted } from "vue";
 import { getDataFromDatabase, onDatabaseDataChange } from "../firebase";
 
 const databaseData = ref({});
+const isHeartRateLow = ref(false);
+const climberDanger = ref("");
 
 onMounted(async () => {
   try {
-    const paths = ["Sensor/heart_rate", "Sensor/blood_oxygen", "Sensor/body_temperature"];
+    const paths = ["Sensor/heart_rate", "Sensor/blood_oxygen", "Sensor/body_temperature", "test/bool"];
 
     for (const path of paths) {
       const data = await getDataFromDatabase(path);
@@ -15,6 +17,20 @@ onMounted(async () => {
       // Listen for changes in each path
       onDatabaseDataChange(path, (newData) => {
         databaseData.value[path] = newData || "No data available";
+
+        // Check if heart rate is below 60
+        if (path === "Sensor/heart_rate") {
+          isHeartRateLow.value = newData < 60;
+        }
+        
+        if (path === "test/bool") {
+          if (newData === true) {
+            climberDanger.value = "Climber is in danger!";
+          } else {
+            climberDanger.value = ""; // Clear the warning message
+          }
+        }
+
       });
     }
   } catch (error) {
@@ -40,6 +56,9 @@ onMounted(async () => {
               HEART RATE:
               {{ databaseData["Sensor/heart_rate"] || "No data available" }}
             </p>
+            <!-- <div v-if="isHeartRateLow" class="mx-4 my-2 text-red-500 font-black font-sans text-xl tracking-tighter subpixel-antialiased shadow-2xl shadow-cyan-500/50 border-y rounded-md border-sky-100" style="text-shadow: 2px 2px #242222;">
+              Warning: Heart rate is below 60!
+            </div> -->
           </div>
         </div>
         <div

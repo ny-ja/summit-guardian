@@ -10,10 +10,6 @@
           >
             Discover Our Team
           </p>
-          <p class="text-base text-gray-300 md:text-lg">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium.
-          </p>
         </div>
         <div
           class="grid gap-10 mx-auto sm:grid-cols-2 lg:grid-row-4 lg:max-w-screen-lg"
@@ -23,7 +19,7 @@
               <img
                 class="absolute object-cover w-full h-full rounded"
                 src="@/assets/team_images/nyja.jpg"
-                alt="Person"
+                alt="Team Member"
               />
             </div>
             <div class="flex flex-col sm:text-center">
@@ -58,7 +54,7 @@
               <img
                 class="absolute object-cover w-full h-full rounded"
                 src=""
-                alt="Person"
+                alt="Team Member"
               />
             </div>
             <div class="flex flex-col sm:text-center">
@@ -93,7 +89,7 @@
               <img
                 class="absolute object-cover w-full h-full rounded"
                 src=""
-                alt="Person"
+                alt="Team Member"
               />
             </div>
             <div class="flex flex-col sm:text-center">
@@ -128,7 +124,7 @@
               <img
                 class="absolute object-cover w-full h-full rounded"
                 src=""
-                alt="Person"
+                alt="Team Member"
               />
             </div>
             <div class="flex flex-col sm:text-center">
