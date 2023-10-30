@@ -7,7 +7,7 @@ const isClimberInDanger = ref(false);
 
 onMounted(async () => {
   try {
-    const paths = ["Distress Signal"];
+    const paths = ["isClimberDanger"];
 
     for (const path of paths) {
       const data = await getDataFromDatabase(path);
@@ -17,8 +17,7 @@ onMounted(async () => {
       onDatabaseDataChange(path, (newData) => {
         databaseData.value[path] = newData || "No data available";
 
-        // Check if heart rate is below 60 or above 100
-        if (path === "Distress Signal") {
+        if (path === "isClimberDanger") {
           isClimberInDanger.value = newData === true;
         }
       });
