@@ -23,7 +23,7 @@ onMounted(async () => {
 
       // Listen for changes in each path
       onDatabaseDataChange(path, (newData) => {
-        databaseData.value[path] = newData || "No data available";
+        databaseData.value[path] = newData || "Initializing...";
 
         if (path === "sensor/heartRate") {
           isHeartRateAbnormal.value = newData < 60 || newData > 100;

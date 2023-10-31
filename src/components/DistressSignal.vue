@@ -15,7 +15,7 @@ onMounted(async () => {
 
       // Listen for changes in each path
       onDatabaseDataChange(path, (newData) => {
-        databaseData.value[path] = newData || "No data available";
+        databaseData.value[path] = newData;
 
         if (path === "isClimberDanger") {
           isClimberInDanger.value = newData === true;
