@@ -3,7 +3,6 @@ import { ref, onMounted } from "vue";
 import { getDataFromDatabase, onDatabaseDataChange } from "../firebase";
 
 const databaseData = ref({});
-const isClimberInDanger = ref(false);
 
 onMounted(async () => {
   try {
@@ -16,10 +15,6 @@ onMounted(async () => {
       // Listen for changes in each path
       onDatabaseDataChange(path, (newData) => {
         databaseData.value[path] = newData;
-
-        if (path === "isClimberDanger") {
-          isClimberInDanger.value = newData === true;
-        }
       });
     }
   } catch (error) {
@@ -31,7 +26,7 @@ onMounted(async () => {
 <template>
   <main>
     <div
-      v-if="isClimberInDanger"
+    v-if="databaseData.isClimberDanger"
       class="p-4 mb-4 text-red-800 border border-red-300 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400 dark:border-red-800"
     >
       <div class="flex items-center">
