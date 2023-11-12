@@ -61,6 +61,13 @@ const updateLocation = (lng, lat) => {
     center: [lng, lat],
     zoom: 14,
   });
+
+  // firebase location coordinate and put a marker on it
+  const firebaseLng = databaseData.value["locationCoordinate/longitude"];
+  const firebaseLat = databaseData.value["locationCoordinate/latitude"];
+  console.log(`Firebase Longitude: ${firebaseLng}, Firebase Latitude: ${firebaseLat}`);
+  
+  new mapboxgl.Marker().setLngLat([firebaseLng, firebaseLat]).addTo(map.value);
 };
 </script>
 
