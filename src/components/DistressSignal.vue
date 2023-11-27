@@ -1,4 +1,5 @@
 <script setup>
+import { RouterLink } from "vue-router";
 import { ref, onMounted } from "vue";
 import { getDataFromDatabase, onDatabaseDataChange } from "../firebase";
 
@@ -26,7 +27,7 @@ onMounted(async () => {
 <template>
   <main>
     <div
-    v-if="databaseData.isClimberDanger"
+      v-if="databaseData.isClimberDanger"
       class="p-4 mb-4 text-red-800 border border-red-300 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400 dark:border-red-800"
     >
       <div class="flex items-center">
@@ -45,7 +46,35 @@ onMounted(async () => {
         <h3 class="text-lg font-medium">Climber is in danger!</h3>
       </div>
       <div class="mt-2 mb-4 text-sm">
-        Immediately initiate the emergency response protocol: alert the nearest search and rescue team about the distress signal and provide them with the exact coordinates of the mountain climber.
+        Immediately initiate the emergency response protocol: alert the nearest
+        search and rescue team about the distress signal and provide them with
+        the exact coordinates of the mountain climber.
+      </div>
+      <div class="flex">
+        <RouterLink
+          to="/map"
+          class="flex text-teal-100 text-md font-sans subpixel-antialiased shadow-md shadow-cyan-500/50 border-y rounded-md px-2 border-sky-100 hover:bg-cyan-400 hover:-translate-y-1"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-5 h-5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+            />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+            />
+          </svg>
+          <span>View climber's location</span></RouterLink
+        >
       </div>
     </div>
   </main>
