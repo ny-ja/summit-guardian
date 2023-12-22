@@ -12,7 +12,6 @@ onMounted(async () => {
   try {
     const paths = [
       "sensor/heartRate",
-      "sensor/bloodOxygen",
       "sensor/bodyTemperature",
       "sensor/ambientTemperature",
     ];
@@ -52,6 +51,10 @@ onMounted(async () => {
   <main>
     <div class="lg:mt-30">
       <div class="relative grid gap-6 sm:grid-row-2 md:grid-cols-2">
+        <div
+          class="bg-logo bg-contain bg-center bg-no-repeat rounded-lg border-cyan-500 md:border-y"
+        >
+        </div>
         <div>
           <div
             v-if="isHeartRateAbnormal"
@@ -81,19 +84,6 @@ onMounted(async () => {
                 {{ databaseData["sensor/heartRate"] || "Initializing..." }}
                 bpm
               </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="border-y text-center px-24 py-40 transition duration-300 transform bg-blood-oxygen bg-cover rounded-lg hover:scale-105 md:shadow-xl hover:shadow-stone-500"
-        >
-          <div class="absolute inset-x-0 bottom-0">
-            <div
-              class="mx-4 my-2 text-white font-black font-sans text-xl tracking-tighter subpixel-antialiased shadow-2xl shadow-cyan-500/50 border-y rounded-md border-sky-100"
-              style="text-shadow: 2px 2px #242222"
-            >
-              SpO2:
-              {{ "No data available" }}
             </div>
           </div>
         </div>

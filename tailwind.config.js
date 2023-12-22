@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     backgroundImage: {
       "heart-rate": "url('/src/assets/images/heart-rate.jpg')",
-      "blood-oxygen": "url('/src/assets/images/blood-oxygen.jpg')",
+      "logo": "url('/src/assets/logo.svg')",
       "body-temperature": "url('/src/assets/images/body-temperature.jpg')",
       "ambient-temperature": "url('/src/assets/images/ambient-temperature.jpg')",
     },
