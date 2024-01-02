@@ -53,7 +53,7 @@ onMounted(async () => {
       <div class="flex">
         <RouterLink
           to="/map"
-          class="flex text-teal-100 text-md font-sans subpixel-antialiased shadow-md shadow-cyan-500/50 border-y rounded-md px-2 border-sky-100 hover:bg-cyan-400 hover:-translate-y-1"
+          class="flex bg-red-700 text-white text-md font-sans subpixel-antialiased shadow-md shadow-red-500/50 border-y rounded-md px-2 border-sky-100 hover:bg-red-900 hover:-translate-y-1"
           ><svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
