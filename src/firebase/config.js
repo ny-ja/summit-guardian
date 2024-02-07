@@ -1,13 +1,14 @@
-import { initializeApp } from 'firebase/app';
+import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCPPy1vwFNX4kEo9FyCHPUjV50hnRYJyMQ",
-  authDomain: "summit-guardian-rtdb-dca45.firebaseapp.com",
-  databaseURL: "https://summit-guardian-rtdb-dca45-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "summit-guardian-rtdb-dca45",
-  storageBucket: "summit-guardian-rtdb-dca45.appspot.com",
-  messagingSenderId: "978983626224",
-  appId: "1:978983626224:web:1f5817496f249f3bdc6935"
+  apiKey: "AIzaSyAzfVy326lVhrbdF_qtaG7LpBxJ8ID0RSk",
+  authDomain: "summit-guardian-db-7ae6c.firebaseapp.com",
+  databaseURL:
+    "https://summit-guardian-db-7ae6c-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "summit-guardian-db-7ae6c",
+  storageBucket: "summit-guardian-db-7ae6c.appspot.com",
+  messagingSenderId: "176656080993",
+  appId: "1:176656080993:web:d4737d4d74e4471a7d4a20",
 };
 
 const app = initializeApp(firebaseConfig);
