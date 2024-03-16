@@ -4,7 +4,7 @@ import app from "./config";
 const db = getDatabase(app);
 
 export const getDataFromDatabase = async (path) => {
-  const dataRef = ref(db, path); // Use the specified path
+  const dataRef = ref(db, path);
   const snapshot = await get(dataRef);
 
   if (snapshot.exists()) {
@@ -15,9 +15,35 @@ export const getDataFromDatabase = async (path) => {
 };
 
 export const onDatabaseDataChange = (path, callback) => {
-  const dataRef = ref(db, path); // Use the specified path
+  const dataRef = ref(db, path);
   onValue(dataRef, (snapshot) => {
     const data = snapshot.val();
     callback(data);
   });
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
